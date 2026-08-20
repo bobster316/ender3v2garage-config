@@ -92,7 +92,7 @@ def build_stats_screen():
     temp = get_cpu_temp()
 
     lines = [
-        ("System Stats", title_font, 48),
+        ("Ender3v2Garage", title_font, 48),
         (f"IP: {ip}", line_font, 92),
         (f"CPU: {cpu:.0f}%", line_font, 126),
         (f"MEM: {mem:.1f}%", line_font, 160),
