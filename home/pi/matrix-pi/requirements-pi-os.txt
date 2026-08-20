@@ -1,0 +1,7 @@
+pillow
+psutil
+spidev
+gpiozero
+rpi-lgpio
+lgpio
+numpy

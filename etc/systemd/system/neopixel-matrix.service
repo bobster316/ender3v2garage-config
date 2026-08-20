@@ -1,0 +1,17 @@
+[Unit]
+Description=NeoPixel Matrix Pattern
+After=multi-user.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/home/pi/neopixel-control
+ExecStart=/usr/bin/python3 /home/pi/neopixel-control/matrix_pattern.py
+Restart=on-failure
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
+

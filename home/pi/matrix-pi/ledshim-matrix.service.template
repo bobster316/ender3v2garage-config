@@ -1,0 +1,15 @@
+[Unit]
+Description=Matrix Pi LED SHIM Animation
+After=multi-user.target
+
+[Service]
+Type=simple
+WorkingDirectory=__PROJECT_DIR__
+ExecStart=__PYTHON__ __PROJECT_DIR__/ledshim_matrix.py
+Restart=always
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

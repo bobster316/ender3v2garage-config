@@ -1,0 +1,15 @@
+[Unit]
+Description=Matrix Pi Display
+After=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=__PROJECT_DIR__
+ExecStart=__PYTHON__ __PROJECT_DIR__/boot_sequence.py
+Restart=always
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

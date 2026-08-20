@@ -1,0 +1,15 @@
+[Unit]
+Description=Matrix Pi LCD Boot Stats then Matrix Rain
+After=multi-user.target
+
+[Service]
+Type=simple
+User=pi
+WorkingDirectory=/home/pi/matrix-pi-legacy-test
+Environment=PYTHONPATH=/home/pi/LCD_Module_RPI_code/RaspberryPi/python
+ExecStart=/home/pi/matrix-pi/.venv/bin/python /home/pi/matrix-pi-legacy-test/boot_sequence.py
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target
