@@ -37,7 +37,11 @@ This repo deliberately excludes runtime logs, Python virtual environments, Pytho
 
 ## Fresh SD restore
 
-Start with a fresh Raspberry Pi OS or MainsailOS image and make sure the user `pi` exists. Clone this repo on the new Pi, then run:
+Use the full restore guide:
+
+[docs/FRESH_SD_RESTORE.md](docs/FRESH_SD_RESTORE.md)
+
+Short version: start with a fresh Raspberry Pi OS or MainsailOS image, make sure the user `pi` exists, install/confirm Klipper and Moonraker, clone this repo on the new Pi, then run:
 
 ```bash
 cd ender3v2garage-config
@@ -73,4 +77,4 @@ systemctl status moonraker
 - The LED SHIM service runs `/home/pi/matrix-pi/ledshim_matrix.py`.
 - The active service files are under `/etc/systemd/system/`.
 - If the printer MCU firmware also needs reflashing, use the Klipper firmware build process for the Creality 4.2.7 board described in `home/pi/printer_data/config/printer.cfg`.
-
+- After future configuration changes, see `docs/FRESH_SD_RESTORE.md#updating-this-repository-after-future-changes`.
