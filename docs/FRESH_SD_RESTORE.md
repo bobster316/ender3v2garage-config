@@ -1,14 +1,14 @@
 # Fresh SD restore instructions
 
-These instructions rebuild the Raspberry Pi 4 named `<hostname>` from this repository after a micro SD card failure.
+These instructions rebuild the Raspberry Pi 4 named `ender3v2garage` from this repository after a micro SD card failure.
 
 The repository stores configuration and local display/LED code. It does not store passwords, generated Python virtual environments, runtime logs, G-code, STL files, or a full disk image.
 
 ## Hardware and saved state
 
 - Raspberry Pi 4
-- Hostname: `<hostname>`
-- Last known IP: `<printer-ip>`
+- Hostname: `ender3v2garage`
+- Last known IP: `192.168.1.214`
 - Required Linux user: `pi`
 - Printer stack: Klipper, Moonraker, Mainsail
 - Main printer config: `/home/pi/printer_data/config/printer.cfg`
@@ -58,7 +58,7 @@ Use Raspberry Pi Imager or a similar tool.
 Recommended options:
 
 - OS: MainsailOS, or Raspberry Pi OS Lite 64-bit if you will install Klipper/Mainsail manually
-- Hostname: `<hostname>`
+- Hostname: `ender3v2garage`
 - User: `pi`
 - SSH: enabled
 - Wi-Fi or Ethernet: configure as needed for your network
@@ -66,7 +66,7 @@ Recommended options:
 Boot the Pi and confirm you can SSH in:
 
 ```bash
-ssh pi@<hostname>.local
+ssh pi@ender3v2garage.local
 ```
 
 If mDNS is not working, find the Pi in your router and SSH to its IP address.
@@ -113,7 +113,7 @@ The script will:
 - recreate `/home/pi/matrix-pi/.venv`
 - reinstall LED/OLED/NeoPixel Python libraries
 - recreate the Mincho font symlink for `/home/pi/matrix-pi/mincho.ttf`
-- set hostname `<hostname>`
+- set hostname `ender3v2garage`
 - reload systemd
 - enable Klipper, Moonraker, NeoPixel, OLED, and LED SHIM services
 
@@ -258,7 +258,7 @@ After changing the Pi configuration, update the local repo from the Pi and push 
 From the Windows workspace used to create this repo:
 
 ```powershell
-cd D:\<hostname>\ender3v2garage-config
+cd D:\ender3v2garage\ender3v2garage-config
 git status
 ```
 

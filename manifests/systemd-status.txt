@@ -6,11 +6,11 @@
    Main PID: 2481 (code=exited, status=1/FAILURE)
         CPU: 912ms
 
-Aug 20 07:04:00 <hostname> systemd[1]: crowsnest.service: Scheduled restart job, restart counter is at 10.
-Aug 20 07:04:00 <hostname> systemd[1]: Stopped crowsnest.service - crowsnest - Multi Webcam/Streamer Control Deamon.
-Aug 20 07:04:00 <hostname> systemd[1]: crowsnest.service: Start request repeated too quickly.
-Aug 20 07:04:00 <hostname> systemd[1]: crowsnest.service: Failed with result 'exit-code'.
-Aug 20 07:04:00 <hostname> systemd[1]: Failed to start crowsnest.service - crowsnest - Multi Webcam/Streamer Control Deamon.
+Aug 20 07:04:00 ender3v2garage systemd[1]: crowsnest.service: Scheduled restart job, restart counter is at 10.
+Aug 20 07:04:00 ender3v2garage systemd[1]: Stopped crowsnest.service - crowsnest - Multi Webcam/Streamer Control Deamon.
+Aug 20 07:04:00 ender3v2garage systemd[1]: crowsnest.service: Start request repeated too quickly.
+Aug 20 07:04:00 ender3v2garage systemd[1]: crowsnest.service: Failed with result 'exit-code'.
+Aug 20 07:04:00 ender3v2garage systemd[1]: Failed to start crowsnest.service - crowsnest - Multi Webcam/Streamer Control Deamon.
 
 ● klipper-mcu.service - Starts the MCU Linux firmware for klipper on startup
      Loaded: loaded (/etc/systemd/system/klipper-mcu.service; enabled; preset: enabled)
@@ -22,7 +22,7 @@ Aug 20 07:04:00 <hostname> systemd[1]: Failed to start crowsnest.service - crows
      CGroup: /system.slice/klipper-mcu.service
              └─531 /usr/local/bin/klipper_mcu -r -I /tmp/klipper_host_mcu
 
-Aug 20 06:59:25 <hostname> systemd[1]: Started klipper-mcu.service - Starts the MCU Linux firmware for klipper on startup.
+Aug 20 06:59:25 ender3v2garage systemd[1]: Started klipper-mcu.service - Starts the MCU Linux firmware for klipper on startup.
 
 ● klipper.service - Klipper 3D Printer Firmware SV1
      Loaded: loaded (/etc/systemd/system/klipper.service; enabled; preset: enabled)
@@ -34,7 +34,7 @@ Aug 20 06:59:25 <hostname> systemd[1]: Started klipper-mcu.service - Starts the 
      CGroup: /system.slice/klipper.service
              └─721 /home/pi/klippy-env/bin/python /home/pi/klipper/klippy/klippy.py /home/pi/printer_data/config/printer.cfg -l /home/pi/printer_data/logs/klippy.log -I /home/pi/printer_data/comms/klippy.serial -a /home/pi/printer_data/comms/klippy.sock
 
-Aug 20 06:59:33 <hostname> systemd[1]: Started klipper.service - Klipper 3D Printer Firmware SV1.
+Aug 20 06:59:33 ender3v2garage systemd[1]: Started klipper.service - Klipper 3D Printer Firmware SV1.
 
 ● ledshim-matrix.service - Matrix Pi LED SHIM Animation
      Loaded: loaded (/etc/systemd/system/ledshim-matrix.service; enabled; preset: enabled)
@@ -45,7 +45,7 @@ Aug 20 06:59:33 <hostname> systemd[1]: Started klipper.service - Klipper 3D Prin
      CGroup: /system.slice/ledshim-matrix.service
              └─1167 /home/pi/matrix-pi/.venv/bin/python /home/pi/matrix-pi/ledshim_matrix.py
 
-Aug 20 06:59:39 <hostname> systemd[1]: Started ledshim-matrix.service - Matrix Pi LED SHIM Animation.
+Aug 20 06:59:39 ender3v2garage systemd[1]: Started ledshim-matrix.service - Matrix Pi LED SHIM Animation.
 
 ● matrix-display.service - Matrix Pi LCD Boot Stats then Matrix Rain
      Loaded: loaded (/etc/systemd/system/matrix-display.service; enabled; preset: enabled)
@@ -56,16 +56,16 @@ Aug 20 06:59:39 <hostname> systemd[1]: Started ledshim-matrix.service - Matrix P
      CGroup: /system.slice/matrix-display.service
              └─1169 /home/pi/matrix-pi/.venv/bin/python /home/pi/matrix-pi-legacy-test/matrix.py
 
-Aug 20 07:23:00 <hostname> python[1169]: Portrait screen
-Aug 20 07:23:00 <hostname> python[1169]: Portrait screen
-Aug 20 07:23:00 <hostname> python[1169]: Portrait screen
-Aug 20 07:23:00 <hostname> python[1169]: Portrait screen
-Aug 20 07:23:00 <hostname> python[1169]: Portrait screen
-Aug 20 07:23:00 <hostname> python[1169]: Portrait screen
-Aug 20 07:23:00 <hostname> python[1169]: Portrait screen
-Aug 20 07:23:04 <hostname> python[1169]: INFO:root:FPS: 12.64
-Aug 20 07:23:12 <hostname> python[1169]: INFO:root:FPS: 12.64
-Aug 20 07:23:20 <hostname> python[1169]: INFO:root:FPS: 12.64
+Aug 20 07:23:00 ender3v2garage python[1169]: Portrait screen
+Aug 20 07:23:00 ender3v2garage python[1169]: Portrait screen
+Aug 20 07:23:00 ender3v2garage python[1169]: Portrait screen
+Aug 20 07:23:00 ender3v2garage python[1169]: Portrait screen
+Aug 20 07:23:00 ender3v2garage python[1169]: Portrait screen
+Aug 20 07:23:00 ender3v2garage python[1169]: Portrait screen
+Aug 20 07:23:00 ender3v2garage python[1169]: Portrait screen
+Aug 20 07:23:04 ender3v2garage python[1169]: INFO:root:FPS: 12.64
+Aug 20 07:23:12 ender3v2garage python[1169]: INFO:root:FPS: 12.64
+Aug 20 07:23:20 ender3v2garage python[1169]: INFO:root:FPS: 12.64
 
 ● moonraker.service - API Server for Klipper SV1
      Loaded: loaded (/etc/systemd/system/moonraker.service; enabled; preset: enabled)
@@ -76,16 +76,16 @@ Aug 20 07:23:20 <hostname> python[1169]: INFO:root:FPS: 12.64
      CGroup: /system.slice/moonraker.service
              └─722 /home/pi/moonraker-env/bin/python -m moonraker
 
-Aug 20 07:04:28 <hostname> python[722]: [websockets.py:open()] - Websocket Opened: ID: 548261672720, Proxied: True, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36, Host Name: <printer-ip>
-Aug 20 07:04:28 <hostname> python[722]: [websockets.py:_handle_identify()] - Websocket 548261672720 Client Identified - Name: mainsail, Version: 2.18.2, Type: web
-Aug 20 07:04:29 <hostname> python[722]: [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
-Aug 20 07:04:29 <hostname> python[722]: [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
-Aug 20 07:04:29 <hostname> python[722]: [klippy_connection.py:_check_ready()] -
-Aug 20 07:04:29 <hostname> python[722]: mcu 'mcu': Unable to connect
-Aug 20 07:04:29 <hostname> python[722]: Once the underlying issue is corrected, use the
-Aug 20 07:04:29 <hostname> python[722]: "FIRMWARE_RESTART" command to reset the firmware, reload the
-Aug 20 07:04:29 <hostname> python[722]: config, and restart the host software.
-Aug 20 07:04:29 <hostname> python[722]: Error configuring printer
+Aug 20 07:04:28 ender3v2garage python[722]: [websockets.py:open()] - Websocket Opened: ID: 548261672720, Proxied: True, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36, Host Name: 192.168.1.214
+Aug 20 07:04:28 ender3v2garage python[722]: [websockets.py:_handle_identify()] - Websocket 548261672720 Client Identified - Name: mainsail, Version: 2.18.2, Type: web
+Aug 20 07:04:29 ender3v2garage python[722]: [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+Aug 20 07:04:29 ender3v2garage python[722]: [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+Aug 20 07:04:29 ender3v2garage python[722]: [klippy_connection.py:_check_ready()] -
+Aug 20 07:04:29 ender3v2garage python[722]: mcu 'mcu': Unable to connect
+Aug 20 07:04:29 ender3v2garage python[722]: Once the underlying issue is corrected, use the
+Aug 20 07:04:29 ender3v2garage python[722]: "FIRMWARE_RESTART" command to reset the firmware, reload the
+Aug 20 07:04:29 ender3v2garage python[722]: config, and restart the host software.
+Aug 20 07:04:29 ender3v2garage python[722]: Error configuring printer
 
 ● neopixel-matrix.service - NeoPixel Matrix Pattern
      Loaded: loaded (/etc/systemd/system/neopixel-matrix.service; enabled; preset: enabled)
@@ -96,8 +96,8 @@ Aug 20 07:04:29 <hostname> python[722]: Error configuring printer
      CGroup: /system.slice/neopixel-matrix.service
              └─3237 /usr/bin/python3 /home/pi/neopixel-control/matrix_pattern.py
 
-Aug 20 07:14:41 <hostname> systemd[1]: Started neopixel-matrix.service - NeoPixel Matrix Pattern.
-Aug 20 07:14:42 <hostname> python3[3237]: NeoPixel ring matrix pattern running on BCM18 with 12 pixels
+Aug 20 07:14:41 ender3v2garage systemd[1]: Started neopixel-matrix.service - NeoPixel Matrix Pattern.
+Aug 20 07:14:42 ender3v2garage python3[3237]: NeoPixel ring matrix pattern running on BCM18 with 12 pixels
 
 ○ sonar.service - Sonar - A WiFi Keepalive daemon
      Loaded: loaded (/etc/systemd/system/sonar.service; enabled; preset: enabled)
@@ -107,13 +107,13 @@ Aug 20 07:14:42 <hostname> python3[3237]: NeoPixel ring matrix pattern running o
    Main PID: 726 (code=exited, status=0/SUCCESS)
         CPU: 150ms
 
-Aug 20 06:59:34 <hostname> python3[726]: [08/20/2026 06:59:34] Configuration loaded:
-Aug 20 06:59:34 <hostname> python3[726]: [08/20/2026 06:59:34]   enable: False
-Aug 20 06:59:34 <hostname> python3[726]: [08/20/2026 06:59:34]   debug_log: False
-Aug 20 06:59:34 <hostname> python3[726]: [08/20/2026 06:59:34]   persistent_log: False
-Aug 20 06:59:34 <hostname> python3[726]: [08/20/2026 06:59:34]   target: auto
-Aug 20 06:59:34 <hostname> python3[726]: [08/20/2026 06:59:34]   count: 3
-Aug 20 06:59:34 <hostname> python3[726]: [08/20/2026 06:59:34]   interval: 60
-Aug 20 06:59:34 <hostname> python3[726]: [08/20/2026 06:59:34]   restart_threshold: 10
-Aug 20 06:59:34 <hostname> python3[726]: [08/20/2026 06:59:34] Sonar is disabled in the configuration. Exiting.
-Aug 20 06:59:34 <hostname> systemd[1]: sonar.service: Deactivated successfully.
+Aug 20 06:59:34 ender3v2garage python3[726]: [08/20/2026 06:59:34] Configuration loaded:
+Aug 20 06:59:34 ender3v2garage python3[726]: [08/20/2026 06:59:34]   enable: False
+Aug 20 06:59:34 ender3v2garage python3[726]: [08/20/2026 06:59:34]   debug_log: False
+Aug 20 06:59:34 ender3v2garage python3[726]: [08/20/2026 06:59:34]   persistent_log: False
+Aug 20 06:59:34 ender3v2garage python3[726]: [08/20/2026 06:59:34]   target: auto
+Aug 20 06:59:34 ender3v2garage python3[726]: [08/20/2026 06:59:34]   count: 3
+Aug 20 06:59:34 ender3v2garage python3[726]: [08/20/2026 06:59:34]   interval: 60
+Aug 20 06:59:34 ender3v2garage python3[726]: [08/20/2026 06:59:34]   restart_threshold: 10
+Aug 20 06:59:34 ender3v2garage python3[726]: [08/20/2026 06:59:34] Sonar is disabled in the configuration. Exiting.
+Aug 20 06:59:34 ender3v2garage systemd[1]: sonar.service: Deactivated successfully.

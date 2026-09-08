@@ -87,8 +87,7 @@ python3 -m pip install \
     rpi-ws281x
 
 echo "Setting hostname..."
-# Set your printer's hostname here, or run:  PRINTER_HOSTNAME=myhost ./restore.sh
-hostnamectl set-hostname "${PRINTER_HOSTNAME:-mainsail}" || true
+hostnamectl set-hostname ender3v2garage || true
 
 echo "Reloading and enabling services..."
 systemctl daemon-reload

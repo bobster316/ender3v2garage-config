@@ -1,4 +1,4 @@
- Static hostname: <hostname>
+ Static hostname: ender3v2garage
        Icon name: computer
       Machine ID: 04a9605dfadc4354b5353ee39c904e6d
          Boot ID: b42fb25132b640e69fb38d33b7cd1a29

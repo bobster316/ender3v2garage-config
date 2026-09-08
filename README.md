@@ -2,14 +2,10 @@
 
 Snapshot date: 2026-08-20
 
-> This is a public snapshot. The host's LAN IP and hostname have been replaced with
-> `<printer-ip>` / `<hostname>` placeholders. It contains no passwords, keys or tokens.
-> Set your own values when restoring (see `docs/FRESH_SD_RESTORE.md`).
-
 This repository stores the rebuild configuration for the Raspberry Pi at:
 
-- Hostname: `<hostname>`
-- Last known IP: `<printer-ip>`
+- Hostname: `ender3v2garage`
+- Last known IP: `192.168.1.214`
 - Hardware: Raspberry Pi 4 running Klipper/Mainsail
 
 The repository is intended to recover from a failed or corrupted micro SD card. It includes the active display and LED configuration, Klipper/Mainsail configuration files, boot GPIO/SPI/I2C settings, systemd units, and package manifests captured from the working Pi.
