@@ -41,13 +41,13 @@ It does not integrate with Klipper, Mainsail, Moonraker, OctoPrint, or any print
 From the local project directory, copy the files to:
 
 ```bash
-pi@ender3v2garage.local:~/matrix-pi
+pi@<hostname>.local:~/matrix-pi
 ```
 
 Use `rsync` where available:
 
 ```bash
-rsync -av --exclude .venv --exclude __pycache__ --exclude backup-originals ./ pi@ender3v2garage.local:~/matrix-pi/
+rsync -av --exclude .venv --exclude __pycache__ --exclude backup-originals ./ pi@<hostname>.local:~/matrix-pi/
 ```
 
 ## Install Dependencies
